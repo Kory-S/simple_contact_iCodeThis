@@ -1,0 +1,97 @@
+/* Add CSS here */
+* {    
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f6f6ff;
+}
+
+.page_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cube {
+    background-color: #f55a7c;
+    height: 25em;
+    width: 25em;
+    border-radius: 10px;
+}
+
+.cube_one {
+    opacity: .5;
+    height: 15em;
+    width: 15em;
+    margin: -25em -5em 0 0;
+}
+
+.cube_two {
+    opacity: .25;
+    height: 10em;
+    width: 10em;
+    margin: 25em 0 0 -5em;
+}
+
+.cube_three {
+    opacity: .1;
+    height: 5em;
+    width: 5em;
+    margin: 40em 0 0 0;
+}
+
+.main_cube {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px 5px #666d8225;
+    z-index: 1;
+}
+
+.main_text {
+    width: 75%;
+}
+
+.main_text h1 {
+    font-size: 3em;
+}
+
+.cube button {
+    height: 3em;
+    width: 10em;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0px 5px 5px #f55a7c50;
+    transition: .5s;
+}
+
+.cube button:hover, .cube button:focus-visible   {
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0px 0px 5px 5px #f55a7c50;
+}
+
+.main_cube p {
+    color: #666d82;
+}
+
+.clicked_button {
+    transform: scaleY(0);
+    transition: 1s;
+}
+
+.button_clicked {
+    transform: scaleX(0);
+    transition: 1s;
+}
+
+.clicked {
+    transform: scale(0) rotate(360deg);
+    transition: 1s;
+}
